@@ -66,7 +66,7 @@ roller.addEventListener("click", (e) => {
     if (finish) {
         diceElement.classList.remove("hidden");
         const dice = Math.floor(Math.random() * 6) + 1;
-        diceElement.src = `./assets/image-${dice}.png`;
+        diceElement.src = `https://djaden-creator.github.io/ludoGame/assets/image-${dice}.png`;
 
         if (dice !== 1) {
 
