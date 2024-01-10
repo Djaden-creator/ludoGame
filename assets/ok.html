@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo"><span>R</span>esto</a>
+        <ul class="navbar">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Relation</a></li>
+            <li><a href="">Call in</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Bussnow</a></li>
+            <li><a href="">Call out</a></li>
+            <a href="" class="btn-reservation">reservation</a>
+        </ul>
+    </header>
+    <section class="banniere" id="banniere">
+        <div class="contenue">
+            <h2>Que du delicieux</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries,</p>
+            <a href="" class="btnone">notre menu</a>
+            <a href="" class="btndeux">reservation</a>
+        </div>
+
+    </section>
+    <section class="apropos" id="apropos">
+        <div class="row">
+            <div class="col50">
+                <h2 class="text-titre"><span>A</span>propos de nous</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                    more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <div class="col50">
+                <div class="img">
+                    <img src="assets/1.jpg" alt="notre image">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="menu" id="menu">
+        <div class="titre">
+            <h2><span>N</span>otre menu</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="assets/1.jpg" alt="image">
+                </div>
+                <div class="text">
+                    <h3>speciale salade</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="assets/1.jpg" alt="image">
+                </div>
+                <div class="text">
+                    <h3>speciale salade</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="assets/1.jpg" alt="image">
+                </div>
+                <div class="text">
+                    <h3>speciale salade</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="assets/1.jpg" alt="image">
+                </div>
+                <div class="text">
+                    <h3>speciale salade</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="assets/1.jpg" alt="image">
+                </div>
+                <div class="text">
+                    <h3>speciale salade</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="assets/1.jpg" alt="image">
+                </div>
+                <div class="text">
+                    <h3>speciale salade</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="assets/1.jpg" alt="image">
+                </div>
+                <div class="text">
+                    <h3>speciale salade</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="assets/1.jpg" alt="image">
+                </div>
+                <div class="text">
+                    <h3>speciale salade</h3>
+                </div>
+            </div>
+        </div>
+        <div class="titre">
+            <a href="" class="btnone">voir plus</a>
+        </div>
+    </section>
+
+    <script>
+        const navbar = document.querySelector('header');
+        window.onscroll = () => {
+            if (window.scrollY > 0) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        };
+    </script>
+</body>
+
+</html>

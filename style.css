@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+.row {
+    height: 100vh;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .contenu .buttonstart {
+    position: absolute;
+    margin-bottom: 300px;
+    background-color: brown;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: 10px;
+}
+
+.row .contenu .buttonstart button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-family: 'lato', sans-serif;
+    color: whitesmoke;
+}
+
+.row .contenu .otherbutton {
+    position: absolute;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.row .contenu .otherbutton .rolling button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-family: 'lato', sans-serif;
+    color: rgb(51, 50, 50);
+    font-weight: bold;
+}
+
+.row .contenu .otherbutton .rolling svg {
+    color: brown;
+}
+
+.row .contenu .otherbutton .hold button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-family: 'lato', sans-serif;
+    color: rgb(43, 42, 42);
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.row .contenu .otherbutton .hold svg {
+    color: brown;
+}
+
+.row .contenu .image {
+    position: absolute;
+}
+
+.row .contenu .image img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+
+.row .contenu .section-0 {
+    background-color: rgb(234, 234, 232);
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .contenu .active {
+    background-color: rgb(197, 145, 48);
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner {
+    background-color: rgb(135, 130, 122);
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.row .contenu .section-0 .score-0 {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .contenu .section-0 .score-0 h2 {
+    font-size: 40px;
+    color: rgb(56, 56, 56);
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+#playing_0 {
+    font-size: 10px;
+    background-color: brown;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: lowercase;
+    padding: 5px;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+#victory_0 {
+    font-size: 20px;
+    background-color: brown;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+#victory_1 {
+    font-size: 20px;
+    background-color: brown;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.row .section-0 .score-0 h6 {
+    font-size: 40px;
+    color: brown;
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+}
+
+.row .section-0 .currentscore-0 {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .section-0 .currentscore-0 .display-0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 10px 20px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.row .section-0 .currentscore-0 .display-0 h2 {
+    font-size: 15px;
+    color: rgb(56, 56, 56);
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.row .section-0 .currentscore-0 .display-0 h6 {
+    font-size: 30px;
+    color: rgb(242, 239, 239);
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+}
+
+
+/* deuxiem joueur::after*/
+
+.row .section-1 .buttonstart {
+    position: absolute;
+    margin-left: -40px;
+}
+
+.row .section-1 {
+    background-color: rgb(197, 197, 193);
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .section-1 .score-1 {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .section-1 .score-1 h2 {
+    font-size: 40px;
+    color: rgb(56, 56, 56);
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+#playing_1 {
+    font-size: 10px;
+    background-color: brown;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: lowercase;
+    padding: 5px;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.row .section-1 .score-1 h6 {
+    font-size: 40px;
+    color: brown;
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+}
+
+.row .section-1 .currentscore-1 {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .section-1 .currentscore-1 .display-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 10px 20px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.row .section-1 .currentscore-1 .display-1 h2 {
+    font-size: 15px;
+    color: rgb(56, 56, 56);
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.row .section-1 .currentscore-1 .display-1 h6 {
+    font-size: 30px;
+    color: rgb(242, 239, 239);
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+}
