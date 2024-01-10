@@ -1,4 +1,5 @@
 "use strict";
+
 // mes consts ici j'ai selectioné les elements de mon html et je l'ai sauvegadé dans des variable const:
 const globascoreOne = document.getElementById("score_0");
 const globalscoreDeux = document.getElementById("score_1");
@@ -65,7 +66,7 @@ roller.addEventListener("click", (e) => {
     if (finish) {
         diceElement.classList.remove("hidden");
         const dice = Math.floor(Math.random() * 6) + 1;
-        diceElement.src = `/assets/image-${dice}.png`;
+        diceElement.src = `./assets/image-${dice}.png`;
 
         if (dice !== 1) {
 
