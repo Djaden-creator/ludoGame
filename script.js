@@ -1,4 +1,6 @@
 "use strict";
+//NOM : KIBELISA KIFE EDEN
+
 //NB: j'ai utilisé SONARLINK deja installé sur mon IDE: visual basic code pour deboguer les erreurs.
 
 // mes consts ici j'ai selectioné les elements de mon html et je l'ai sauvegadé dans des variable const:
